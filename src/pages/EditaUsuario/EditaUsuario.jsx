@@ -1,6 +1,6 @@
 import { Button } from "react-bootstrap";
 import { usuarios } from "../../data/usuarios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 export function EditaUsuario() {
 
@@ -11,7 +11,14 @@ export function EditaUsuario() {
   const usuario = usuarios.find(usuario =>{
     return usuario.id === parseInt(id);//retorna valor booleano que satisfaz a pesquisa
   });
+
+  let navigate = useNavigate();
   
+function editar(){
+  
+  /* Capturar as informações do formulário, validar os dados e modificar as informações do banco de dados */
+  navigate("/usuarios")
+}
   
 
 
@@ -22,7 +29,7 @@ export function EditaUsuario() {
       <br />
       <span>{usuario.idade} anos</span>
       <br />
-      <Button variant="dark">Editar</Button>
+      <Button onClick={editar} variant="dark">Editar</Button>
     </div>
   );
 }

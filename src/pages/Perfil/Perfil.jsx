@@ -1,5 +1,5 @@
 import { usuarios } from "../../data/usuarios";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 
 export function Perfil(){
@@ -9,6 +9,15 @@ export function Perfil(){
 
     let usuario  = usuarios.find(u => u.id === parseInt(id));
 
+
+    let navigate = useNavigate();
+  
+function voltar(){
+  /* Capturar as informações do formulário, validar os dados e modificar as informações do banco de dados */
+  navigate("/usuarios")
+}
+  
+
     return(
         <div className="perfil">
             <h2>{usuario.nome}</h2>
@@ -16,7 +25,7 @@ export function Perfil(){
             <br />
             <span>{usuario.idade} anos</span>
             <br />
-            <Button variant="dark">Voltar</Button>
+            <Button onClick={voltar} variant="dark">Voltar</Button>
             </div>
     )
 }
