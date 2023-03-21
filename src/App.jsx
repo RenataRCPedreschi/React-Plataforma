@@ -11,6 +11,7 @@ import { Root } from "./pages/Root/Root";
 import { Section1 } from "./pages/Section1/Section1";
 import { Section2 } from "./pages/Section2/Section2";
 import { Section3 } from "./pages/Section3/Section3";
+import { EditaUsuario } from "./pages/EditaUsuario/EditaUsuario";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/usuarios" element={<Usuarios />} />
+            <Route path="/usuario/edit/:id" element={<EditaUsuario />} /> {/* Parâmetro de rota */}
             <Route path="/login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
           </Route>
