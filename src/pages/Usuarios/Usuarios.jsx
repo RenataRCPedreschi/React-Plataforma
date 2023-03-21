@@ -8,7 +8,7 @@ export function Usuarios() {
       <h1>Usuários</h1>
       <Table striped bordered hover>
         <thead>
-          <tr>
+          <tr key={usuarios.id}>
             <th>#</th>
             <th>Nome</th>
             <th>Idade</th>
@@ -24,7 +24,10 @@ export function Usuarios() {
                 <td>{usuario.idade}</td>
                 <td>{usuario.email}</td>
                 <td>
-                <Link to={`/usuario/edit/${usuario.id}`}>Editar</Link>
+                  <Link to={`/usuario/edit/${usuario.id}`}>Editar</Link>
+                </td>
+                <td>
+                  <Link to={`/usuario/perfil/${usuario.id}`}>Ver Usuário</Link>
                 </td>
               </tr>
             );

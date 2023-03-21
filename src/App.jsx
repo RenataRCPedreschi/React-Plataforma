@@ -12,6 +12,7 @@ import { Section1 } from "./pages/Section1/Section1";
 import { Section2 } from "./pages/Section2/Section2";
 import { Section3 } from "./pages/Section3/Section3";
 import { EditaUsuario } from "./pages/EditaUsuario/EditaUsuario";
+import { Perfil } from "./pages/Perfil/Perfil";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/contato" element={<Contato />} />
             <Route path="/usuarios" element={<Usuarios />} />
             <Route path="/usuario/edit/:id" element={<EditaUsuario />} /> {/* Parâmetro de rota */}
+            <Route path="usuario/perfil/:id" element={<Perfil />} />
             <Route path="/login" element={<Login />} />
             <Route path="*" element={<NotFound />} />
           </Route>
