@@ -1,24 +1,10 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
 
-.containerForm{
-display: flex;
-justify-content: center;
-background-image: radial-gradient(circle at 12.5% 12.5%, #46e0ee 0, #4accdd 16.67%, #4db7c9 33.33%, #4fa1b3 50%, #4f8b9c 66.67%, #4d7886 83.33%, #4a6772 100%);
-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-}
-
-.form{
-    margin: 200px;
-    
-}
-
-
-
-.btn1{
-margin: 20px;
-width: 100px;
-display: flex;
-
-justify-content: center;
-
+    background-color: blanchedalmond;
 }

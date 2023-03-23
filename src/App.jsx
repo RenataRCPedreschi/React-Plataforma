@@ -13,6 +13,8 @@ import { Section2 } from "./pages/Section2/Section2";
 import { Section3 } from "./pages/Section3/Section3";
 import { EditaUsuario } from "./pages/EditaUsuario/EditaUsuario";
 import { Perfil } from "./pages/Perfil/Perfil";
+import { Pokemon } from "./pages/Pokemon/Pokemon";
+import { Herois } from "./pages/Herois/Herois";
 
 function App() {
   return (
@@ -31,6 +33,11 @@ function App() {
             <Route path="/usuario/edit/:id" element={<EditaUsuario />} /> {/* Parâmetro de rota */}
             <Route path="usuario/perfil/:id" element={<Perfil />} />
             <Route path="/login" element={<Login />} />
+            
+            <Route path="/pokemon" element={<Pokemon />} />
+
+            <Route path="/herois" element={<Herois />} />
+
             <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
