@@ -15,6 +15,8 @@ import { EditaUsuario } from "./pages/EditaUsuario/EditaUsuario";
 import { Perfil } from "./pages/Perfil/Perfil";
 import { Pokemon } from "./pages/Pokemon/Pokemon";
 import { Herois } from "./pages/Herois/Herois";
+import { EletroEquip } from "./pages/EletroEquip/EletroEquip";
+import { Devs } from "./pages/Devs/Devs";
 
 function App() {
   return (
@@ -37,6 +39,10 @@ function App() {
             <Route path="/pokemon" element={<Pokemon />} />
 
             <Route path="/herois" element={<Herois />} />
+
+            <Route path="/eletronicos" element={<EletroEquip />} />
+
+            <Route path="/devs" element={<Devs />} />
 
             <Route path="*" element={<NotFound />} />
           </Route>

@@ -11,12 +11,12 @@ export function Menu() {
                         <Button variant="link">
                             <Link to="/">Home</Link>
                         </Button>
-                        <Button variant="link">
+                       {/*  <Button variant="link">
                             <Link to="/blog">Blog</Link>
                         </Button>
                         <Button variant="link">
                             <Link to="/contato">Contato</Link>
-                        </Button>
+                        </Button> */}
                         <Button variant="link">
                         <Link to="/usuarios">Usuários</Link>
                         </Button>
@@ -26,11 +26,17 @@ export function Menu() {
                         {/* <Button variant="link">
                         <Link to="/produtos">Produtos</Link>
                         </Button> */}
-                        <Button variant="link">
+                        {/* <Button variant="link">
                         <Link to="/pokemon">Pokemon</Link>
-                        </Button>
+                        </Button> */}
                         <Button variant="link">
                         <Link to="/herois">Herois</Link>
+                        </Button>
+                        {/* <Button variant="link">
+                        <Link to="/eletronicos">Cadastro eletrônicos</Link>
+                        </Button> */}
+                        <Button variant="link">
+                        <Link to="/devs">Devs</Link>
                         </Button>
                     </Nav>
                 </Container>
